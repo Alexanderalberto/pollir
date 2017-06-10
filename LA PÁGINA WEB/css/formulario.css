@@ -1,0 +1,68 @@
+#formulario {
+	margin-top: -20px;
+	padding: 40px;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#formulario form {
+	font-size: 14px;
+	margin: 0 auto;
+	width: 400px;
+}
+
+textarea {
+	height: 100px;
+	width: 400px;
+}
+
+.campo, textarea {
+	background: #eee;
+	border: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 400px;
+	border-radius: 3px;
+}
+
+.campo:focus, textarea:focus {
+	background: #f0ad4e;
+	outline: none;
+	box-shadow: 0 0 10px rgba(255,255,255,.4);
+}
+
+label {
+    display: inline-block;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+    color: #000;
+}
+
+.boton {
+	background: #f0ad4e;
+	border: 0;
+	color: #fff;
+	margin-left: 125px;
+	padding: 10px;
+	width: 150px;
+	box-shadow: 0 0 10px rgba(255,255,255,.4);
+}
+
+.boton:hover {
+	background-color: #ff5105;
+}
+
+#errores {
+	background: red;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	border-radius: 5px;
+	display: none;
+	width: 405px;
+}
+
+.campo-vacio {
+	box-shadow: 0 0 5px red;
+}

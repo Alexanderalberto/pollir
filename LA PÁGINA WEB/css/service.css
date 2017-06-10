@@ -1,0 +1,213 @@
+/* Custom Stylesheet */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+		
+.text-center {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Button Override */
+.btn-warning {
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/* Hero */
+#hero {
+	background: url('../img/20170309_152457.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#hero > #hero-text {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#hero > #hero-text > h1 {
+	color: #fff;
+	margin-top: -120px;
+}
+
+/* Icon Row */
+#iconRow {
+	padding: 60px 0;
+}
+
+/* Pictures */
+#pictures > #A67, #A68 {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	color: #fff;
+}
+
+#pictures > #A67 {
+	background: url('../img/20161115_095323.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 450px;
+}
+
+#pictures > #A68 {
+	background: url('../img/SDC10371.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 450px;
+}
+
+#pictures .overlay {
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Navigation Menu */
+.custom-navigation {
+	background: transparent;
+	height: 70px;
+	width: 100%;
+	z-index: 99999999;
+}
+
+.custom-navigation #logo {
+	color: #fff;
+	padding: 20px 0 0 25px;
+	font-size: 24px;
+}
+
+.custom-navigation #links,#logo {
+	display: inline-block;
+}
+
+.custom-navigation #links {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px 25px 0 0;
+}
+
+/* Custom visible class */
+.custom-navigation > #links.visible {
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.custom-navigation #links > li {
+	display: inline-block;
+	color: #fff;
+	padding-right: 20px;
+}
+
+.custom-navigation #links.visible > li {
+	display: block;
+	padding-right: 0;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+/* Article */
+article {
+	padding: 17px;
+	padding-top: 5px;	
+	line-height: 1.5;
+	padding: .5em 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Footer */
+#footer {
+	background: black;
+    font-size: 10px;
+    color: #DFD8C6;
+    display: block;
+    letter-spacing: 0.1em;
+    margin: 0px auto;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Media Queries */
+@media(max-width: 767px) {
+	/* Mobile Nav */
+	#hamburger, #close {
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 20px 25px;
+		z-index: 99999999;
+	}
+
+	.custom-navigation > #links {
+		display: none;
+		padding: 0;
+	}
+
+	.custom-navigation #logo {
+    	color: #000;
+	}
+
+	#close {
+		display: none;
+	}
+
+	.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    	content: "\f0c9";	
+    	color: #000;
+	}
+
+	#hero > #hero-text > h1 {
+		font-size: 24px;	
+	}
+
+	.sm-dev-padding {
+		padding-top: 60px;
+	}
+
+	#pictures > #A67, #A68 {
+		display: block;
+		width: 100%;
+	}
+}

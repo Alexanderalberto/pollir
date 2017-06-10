@@ -1,0 +1,247 @@
+/* Custom Stylesheet */
+* {
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: #292b2c;
+	line-height: 1.5;
+	margin: 0;
+}
+	
+.text-center {
+	text-align: center!important;
+}
+
+a {
+    color: #fff;
+    touch-action: manipulation;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: .5rem;
+	font-weight: 500;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Button Override */
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+	color: #fff;
+	transition: 0.2s;
+	background-color: #f09926;
+}
+
+.btn-warning {
+    border-radius: 0;
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    font-size: 14px;
+}
+
+/* Hero */
+#hero {
+	background: url('../img/20170309_152523.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#hero > #hero-text {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#hero > #hero-text > h1 {
+	color: #fff;
+	margin-top: -120px;
+}
+
+/* Icon Row */
+#iconRow {
+	padding: 20px 0;
+}
+
+/* Pictures */
+#pictures > #A67, #A68 {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	color: #fff;
+}
+
+#pictures > #A67 {
+	background: url('../img/20161155_094526.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 450px;
+}	
+
+#pictures > #A68 {
+	background: url('../img/20161125_094343.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 450px;
+}
+
+#pictures .overlay {
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Navigation Menu */
+.custom-navigation {
+	background: transparent;
+	height: 70px;
+	width: 100%;
+	z-index: 99999999;
+}
+
+.custom-navigation #logo {
+	color: #fff;
+	padding: 20px 0 0 25px;
+	font-size: 24px;
+}
+
+.custom-navigation #links,#logo {
+	display: inline-block;
+}
+
+.custom-navigation #links {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px 25px 0 0;
+}
+
+/* Custom visible class */
+.custom-navigation > #links.visible {
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.custom-navigation #links > li {
+	display: inline-block;
+	color: #fff;
+	padding-right: 20px;
+}
+
+.custom-navigation #links.visible > li {
+	display: block;
+	padding-right: 0;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+/* Footer */
+#footer {
+	background: black;
+    font-size: 10px;
+    color: #DFD8C6;
+    display: block;
+    letter-spacing: 0.1em;
+    margin: 0px auto;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Media Queries 1 */
+@media(max-width: 767px) {
+	/* Mobile Nav */
+	#hamburger, #close {
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 20px 25px;
+		z-index: 99999999;
+	}
+
+	.custom-navigation > #links {
+		display: none;
+		padding: 0;
+	}
+
+	#close {
+		display: none;
+	}
+
+	#hero > #hero-text > h1 {
+		font-size: 24px;	
+	}
+
+	.sm-dev-padding {
+		padding-top: 60px;
+	}
+
+	#pictures > #A67, #A68 {
+		display: block;
+		width: 100%;
+	}
+}
